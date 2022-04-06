@@ -7,33 +7,51 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Ping coming soon page</title>
+  <script src="https://kit.fontawesome.com/6115d7769f.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="/dist/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="/images/logo.svg" alt="" class=""logo>
-    </div>
-    <div class="launch">
-      <h1>We are launching <span>soon!</span></h1>
-    </div>
-
-    Subscribe and get notified
-
-    Notify Me
-
-    &copy; Copyright Ping. All rights reserved.
-
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
-  </div>
-
+	<section class="header">
+		<div class="header__logo">
+			<img src="/images/logo.svg" alt="" class="header__logo-img">
+		</div>
+		<div class="header__message">
+			<h1>We are launching <span class="dark">soon!</span></h1>
+			<p class="sub">Subscribe and get notified</p>
+		</div>
+	</section>
+	<section>
+		<form class="form-field" id="form" action="#">
+			<input type="text" id="email" class="form-field__form error" placeholder="Your email address..." onkeydown="validation()">
+			<span id="text"></span>
+			<a href="#" class="form-field__notify"><button type="submit" class="button">Notify Me</button></a>
+		</form>
+	</section>
+	<section class="hero">
+		<img src="/images/illustration-dashboard.png" alt="" class="hero__image">
+	</section>
+	<section class="footer-icons">
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-twitter icon"></i>
+		<i class="fab fa-instagram icon"></i>
+	</section>
+	<section class="footer">
+		<p class="small">&copy; Copyright Ping. All rights reserved.</p>
+	</section>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Darryl Rachel</a>.
+    </p>
+  </footer>
+  <script src="/app/js/script.js"></script>
 </body>
 </html>
