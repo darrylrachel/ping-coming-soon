@@ -1,3 +1,129 @@
 @media (min-width: 992px) and (max-width: 1199px) {
-	
+	section.header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		& .header__logo {
+			padding-top: 60px;
+			& .header__logo-img {
+				width: 130px;
+			}
+		}
+		& .header__message {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 0 28px;
+			& h1 {
+				color: $n-gray;
+				font-size: 30px;
+				font-weight: 300;
+				margin: 0;
+    			padding-top: 40px;
+				& .dark {
+					color: $n-v-dark-blue;
+					font-weight: 700;
+				}
+			}
+			& .sub {
+				color: $n-gray;
+				font-weight: 300;
+				font-size: 18px;
+				margin: 0;
+    			padding-top: 20px;
+				font-family: inherit;
+			}
+		}
+	} // end header
+	.form-field {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 42px;
+		& input.form-field__form {
+			border: 1px solid $sec-pale-blue;
+			border-radius: 50px;
+			padding:15px 80px;
+			font-family: inherit;
+			& .error{
+				border: 1px solid $sec-light-red;
+			}
+		}
+		& input.form-field__form::placeholder {
+			color: $sec-pale-blue;
+			font-size: 16px;
+			font-weight: 300;
+			text-align: right;
+			position: absolute;
+			left: 25px;
+		}
+
+		& .form-field__notify {
+			padding-top: 10px;
+			text-decoration: none;
+			& .button {
+				background: $pri-blue;
+				border: 1px solid $pri-blue;
+				border-radius: 50px;
+				padding: 18px 120px;
+				font-size: 16px;
+				color: #fff;
+				box-shadow: -1px 3px 8px -3px $pri-blue;
+				-webkit-box-shadow: -1px 3px 8px -3px $pri-blue;
+				-moz-box-shadow: -1px 3px 8px -3px $pri-blue;
+			}
+		}
+	} // end form section
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding-top: 60px;
+		& img.hero__image {
+			width: 100%;
+			object-fit: contain;
+		}
+	} // end hero image
+	.footer-icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 140px 140px 0 140px;
+		& .fa-facebook-f {
+			font-size: 16px;
+			color: $pri-blue;
+			border-radius: 50px;
+			border: 1px solid $sec-pale-blue;
+			padding: 10px 13px;
+		}
+		& .icon {
+			color: $pri-blue;
+			font-size: 16px;
+			border: 1px solid $sec-pale-blue;
+			border-radius: 50px;
+			padding: 10px;
+		}
+	}
+	.attribution {
+		padding-top: 40px;
+		margin: 0;
+	}
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding-top: 80px;
+		& .small {
+			color: $n-gray;
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
 }
