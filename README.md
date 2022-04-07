@@ -28,7 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](/images/screenshots/Screen%20Shot%202022-04-06%20at%209.47.45%20AM.png)
+![](/images/screenshots/mobile.png)
+![](/images/screenshots/desktop.png)
 
 
 ### Links

@@ -49,13 +49,18 @@
 			padding:20px 145px;
 			margin-right: 20px;
 			font-family: inherit;
-			& input.invalid {
-				border-color: $sec-light-red;
-			}
-			& #text {
-				position: absolute;
-				top: 0;
-			}
+		}
+		& input.form-field__form:invalid {
+			border: 1px solid $sec-light-red;
+		}
+		& #text {
+			display: block;
+		}
+		& input.invalid {
+			border-color: $sec-light-red;
+		}
+		& input.invalid {
+			border-color: $sec-light-red;
 		}
 		& input.form-field__form::placeholder {
 			color: $sec-pale-blue;
@@ -74,12 +79,26 @@
 				padding: 18px 60px;
 				font-size: 16px;
 				color: #fff;
+				cursor: pointer;
 				box-shadow: -1px 3px 8px -3px $pri-blue;
 				-webkit-box-shadow: -1px 3px 8px -3px $pri-blue;
 				-moz-box-shadow: -1px 3px 8px -3px $pri-blue;
 			}
+			& .button:hover {
+				background-color: #6b91f0;
+				border: #6b91f0;
+				transition: .5s ease-in-out;
+			}
 		}
+		// input#email:active {
+		// 	border-color: red;
+		// }
 	} // end form section
+	span#text {
+		position: absolute;
+		top: 360px;
+		left: 570px;
+	}
 	.hero {
 		display: flex;
 		flex-direction: column;
